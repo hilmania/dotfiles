@@ -1,0 +1,95 @@
+[09-Sep-2021 23:23:14 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[09-Sep-2021 23:23:14 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 949
+[09-Sep-2021 23:23:14 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[09-Sep-2021 23:23:14 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 949
+[09-Sep-2021 23:23:14 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php:875
+Stack trace:
+#0 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(875): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/Users/gazafran...', 875)
+#1 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(838): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(685): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#3 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(794): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#4 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#5 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#6 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(685): Illuminate\Container\Container->build(Object(Closure))
+#7 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(794): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#8 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(633): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#9 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(779): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#10 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(164): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#11 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(108): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(94): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(ErrorException))
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#14 {main}
+  thrown in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[09-Sep-2021 23:23:14 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php:875
+Stack trace:
+#0 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(875): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/Users/gazafran...', 875)
+#1 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(838): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(685): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#3 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(794): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#4 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#5 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#6 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(685): Illuminate\Container\Container->build(Object(Closure))
+#7 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(794): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#8 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(633): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#9 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(779): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#10 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(164): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#11 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(108): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(94): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(ErrorException))
+#13 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(130): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#14 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#15 {main}
+  thrown in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[09-Sep-2021 23:23:57 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[09-Sep-2021 23:23:57 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 949
+[09-Sep-2021 23:23:57 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[09-Sep-2021 23:23:57 UTC] PHP Deprecated:  Method ReflectionParameter::getClass() is deprecated in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 949
+[09-Sep-2021 23:23:57 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php:875
+Stack trace:
+#0 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(875): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/Users/gazafran...', 875)
+#1 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(838): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(685): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#3 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(794): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#4 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#5 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#6 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(685): Illuminate\Container\Container->build(Object(Closure))
+#7 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(794): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#8 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(633): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#9 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(779): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#10 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(164): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#11 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(108): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(94): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(ErrorException))
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#14 {main}
+  thrown in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[09-Sep-2021 23:23:57 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php:875
+Stack trace:
+#0 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(875): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/Users/gazafran...', 875)
+#1 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(838): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(685): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#3 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(794): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#4 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#5 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#6 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(685): Illuminate\Container\Container->build(Object(Closure))
+#7 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(794): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#8 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php(633): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#9 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(779): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#10 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(164): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#11 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(108): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(94): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(ErrorException))
+#13 /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(130): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#14 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#15 {main}
+  thrown in /Users/gazafran/Tasks/Codes/web/garjas-ext/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[08-Feb-2022 07:39:19 UTC] PHP Warning:  Undefined array key "didChangeWatchedFiles" in /Users/gazafran/.local/share/nvim/lsp_servers/phpactor-source/vendor/phpactor/language-server-phpactor-extensions/lib/LanguageServerIndexer/Watcher/LanguageServerWatcher.php on line 64
+[08-Feb-2022 07:51:32 UTC] PHP Warning:  Undefined array key "didChangeWatchedFiles" in /Users/gazafran/.local/share/nvim/lsp_servers/phpactor-source/vendor/phpactor/language-server-phpactor-extensions/lib/LanguageServerIndexer/Watcher/LanguageServerWatcher.php on line 64
+[08-Feb-2022 08:18:37 UTC] PHP Warning:  Undefined array key "didChangeWatchedFiles" in /Users/gazafran/.local/share/nvim/lsp_servers/phpactor-source/vendor/phpactor/language-server-phpactor-extensions/lib/LanguageServerIndexer/Watcher/LanguageServerWatcher.php on line 64
+[19-May-2022 05:45:16 UTC] PHP Warning:  opendir(/Users/gazafran/Tasks/Codes/web/floww-dashboard): failed to open dir: No such file or directory in /Users/gazafran/.composer/vendor/laravel/valet/server.php on line 133
+[19-May-2022 05:45:16 UTC] PHP Warning:  opendir(/Users/gazafran/Tasks/Codes/web/floww-dashboard): failed to open dir: No such file or directory in /Users/gazafran/.composer/vendor/laravel/valet/server.php on line 133
+[19-Jun-2022 13:59:24 UTC] PHP Warning:  Undefined array key "didChangeWatchedFiles" in /Users/gazafran/.local/share/nvim/lsp_servers/phpactor-source/vendor/phpactor/language-server-phpactor-extensions/lib/LanguageServerIndexer/Watcher/LanguageServerWatcher.php on line 64
+[28-Jun-2022 18:02:39 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 8.0.20. in /Users/gazafran/Tasks/Codes/web/astrajingga/vendor/composer/platform_check.php on line 24
+[29-Jun-2022 04:16:39 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 8.0.20. in /Users/gazafran/Tasks/Codes/web/astrajingga/vendor/composer/platform_check.php on line 24
+[10-Jul-2022 23:30:55 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 8.0.20. in /Users/gazafran/Tasks/Codes/web/astrajingga/vendor/composer/platform_check.php on line 24
+[19-Jul-2022 09:40:25 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.4.30. in /Users/gazafran/Tasks/Codes/web/astrajingga/vendor/composer/platform_check.php on line 24
+[20-Jul-2022 06:46:26 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.4.30. in /Users/gazafran/Tasks/Codes/web/astrajingga/vendor/composer/platform_check.php on line 24
+[21-Jul-2022 05:48:36 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.30. in /Users/gazafran/Downloads/vuexy-laravel/vendor/composer/platform_check.php on line 24
+[28-Sep-2022 09:20:33 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 8.0.20. in /Users/gazafran/Tasks/Codes/web/astrajingga/vendor/composer/platform_check.php on line 24
