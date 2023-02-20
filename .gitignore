@@ -1,2 +1,4 @@
 .DS_Store
-
+zsh/plugins/*
+zsh/themes/*
+zsh/.zsh_history
