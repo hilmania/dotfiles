@@ -1,8 +1,0 @@
-{
-    "tld": "test",
-    "paths": {
-        "0": "/Users/gazafran/.config/valet/Sites",
-        "2": "/Users/gazafran/Tasks/Codes/web/floww-dashboard"
-    },
-    "loopback": "127.0.0.1"
-}
