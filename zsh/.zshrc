@@ -1,6 +1,13 @@
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
+# Nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; 
+then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
+# End Nix
+
 PATH="$PATH:/Applications/WezTerm.app/Contents/MacOS"
 export PATH
 
@@ -32,11 +39,49 @@ SPACESHIP_PROMPT_ORDER=(
   jobs          # Background jobs indicator
   exit_code     # Exit code section
   char          # Prompt character
+  venv
 )
 SPACESHIP_USER_SHOW=always
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
+SPACESHIP_VENV_SHOW="${SPACESHIP_VENV_SHOW=true}"
+SPACESHIP_VENV_ASYNC="${SPACESHIP_VENV_ASYNC=false}"
+SPACESHIP_VENV_PREFIX="${SPACESHIP_VENV_PREFIX="$SPACESHIP_PROMPT_DEFAULT_PREFIX"}"
+SPACESHIP_VENV_SUFFIX="${SPACESHIP_VENV_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"}"
+SPACESHIP_VENV_SYMBOL="${SPACESHIP_VENV_SYMBOL=""}"
+# The (A) expansion flag creates an array, the '=' activates word splitting
+SPACESHIP_VENV_GENERIC_NAMES="${(A)=SPACESHIP_VENV_GENERIC_NAMES=virtualenv venv .venv}"
+SPACESHIP_VENV_COLOR="${SPACESHIP_VENV_COLOR="blue"}"
+
+# ------------------------------------------------------------------------------
+# Section
+# ------------------------------------------------------------------------------
+
+# Show current virtual environment (Python).
+spaceship_venv() {
+  [[ $SPACESHIP_VENV_SHOW == false ]] && return
+
+  # Check if the current directory running via Virtualenv
+  [ -n "$VIRTUAL_ENV" ] || return
+
+  local venv
+
+  if [[ "${SPACESHIP_VENV_GENERIC_NAMES[(i)$VIRTUAL_ENV:t]}" -le \
+        "${#SPACESHIP_VENV_GENERIC_NAMES}" ]]
+  then
+    venv="$VIRTUAL_ENV:h:t"
+  else
+    venv="$VIRTUAL_ENV:t"
+  fi
+
+  spaceship::section \
+    --color "$SPACESHIP_VENV_COLOR" \
+    --prefix "$SPACESHIP_VENV_PREFIX" \
+    --suffix "$SPACESHIP_VENV_SUFFIX" \
+    --symbol "$SPACESHIP_VENV_SYMBOL" \
+    "$venv"
+}
 
 alias vim="nvim"
 alias ll="exa -l -g --icons"
