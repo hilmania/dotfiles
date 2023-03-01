@@ -81,3 +81,6 @@ keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
 
 -- Lsp
 keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
+
+-- REST Nvim 
+keymap("n", "<S-t>", "<cmd>lua require('rest-nvim').run()<cr>", opts)
