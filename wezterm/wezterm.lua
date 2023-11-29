@@ -1,12 +1,10 @@
-local wezterm = require 'wezterm'
+local wezterm = require("wezterm")
 
 return {
-    
-   font = wezterm.font 'FiraCode Nerd Font',
-    color_scheme = "tokyonight",
-    font_size = 14.0,
-    line_height = 1.3,
-    window_decorations = "NONE",
-    enable_tab_bar = false,
-    
+	font = wezterm.font("JetBrainsMono Nerd Font"),
+	color_scheme = "tokyonight",
+	font_size = 14,
+	line_height = 1.4,
+	window_decorations = "RESIZE",
+	enable_tab_bar = false,
 }
