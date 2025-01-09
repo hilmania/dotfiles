@@ -1,15 +1,12 @@
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
-# Nix
-if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; 
-then
-  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
-fi
-# End Nix
 
 PATH="$PATH:/Applications/WezTerm.app/Contents/MacOS"
+PATH="$PATH:/Users/hilmania/Library/Python/3.9/bin"
+PATH="$PATH:/Users/hilmania/.composer/vendor/bin"
 export PATH
+
 
 export ZSH=$HOME/dotfiles/zsh
 
@@ -86,3 +83,10 @@ spaceship_venv() {
 alias vim="nvim"
 alias ll="exa -l -g --icons"
 alias lla="ll -a"
+alias lg="lazygit"
+
+#export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
