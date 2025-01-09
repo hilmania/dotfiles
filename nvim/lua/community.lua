@@ -14,4 +14,10 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.typescript-all-in-one" },
+  { import = "astrocommunity.pack.vue" },
+  { import = "astrocommunity.pack.kotlin" },
+  { import = "astrocommunity.pack.dart" },
+  { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.pack.yaml" },
 }
